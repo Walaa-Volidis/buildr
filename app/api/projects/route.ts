@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import prisma from '@/lib/prisma';
-import { createProjectSchema } from '@/lib/validations';
+import { ZCreateProjectSchema } from '@/lib/validations';
 import { z } from 'zod';
 
 // GET all projects
@@ -28,7 +28,7 @@ export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
 
-    const validatedData = createProjectSchema.parse(body);
+    const validatedData = ZCreateProjectSchema.parse(body);
 
     const project = await prisma.project.create({
       data: {

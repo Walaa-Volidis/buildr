@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import prisma from '@/lib/prisma';
-import { updateProjectSchema } from '@/lib/validations';
+import { ZUpdateProjectSchema } from '@/lib/validations';
 import { z } from 'zod';
 
 // GET a single project
@@ -43,7 +43,7 @@ export async function PATCH(
     const { id } = await params;
     const body = await request.json();
 
-    const validatedData = updateProjectSchema.parse(body);
+    const validatedData = ZUpdateProjectSchema.parse(body);
 
     const project = await prisma.project.update({
       where: { id },
