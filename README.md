@@ -40,8 +40,8 @@ You'll need Node.js 18+ and a PostgreSQL database.
 **1. Clone the repo**
 
 ```bash
-git clone https://github.com/Walaa-Volidis/vznx-challenge.git
-cd vznx-challenge
+git clone https://github.com/Walaa-Volidis/buildr.git
+cd buildr
 ```
 
 **2. Setup Backend**
@@ -99,7 +99,7 @@ Frontend runs on http://localhost:3000
 - Backend: Render
 - Database: Neon PostgreSQL
 
-Live at: [https://www.vznx.walaavolidis.com](https://www.vznx.walaavolidis.com)
+Live at: [https://www.buildr.walaavolidis.com](https://www.buildr.walaavolidis.com)
 
 ## Author
 
