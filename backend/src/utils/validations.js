@@ -1,4 +1,4 @@
-const z = require('zod');
+import z from 'zod';
 
 const ZCreateProjectSchema = z.object({
   name: z
@@ -35,7 +35,7 @@ const ZCreateTeamMemberSchema = z.object({
     .max(100, 'Name is too long'),
 });
 
-module.exports = {
+export {
   ZCreateProjectSchema,
   ZUpdateProjectSchema,
   ZCreateTaskSchema,

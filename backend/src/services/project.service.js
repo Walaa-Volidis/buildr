@@ -1,8 +1,8 @@
-const projectRepository = require('../repositories/project.repository');
-const {
+import projectRepository from '../repositories/project.repository.js';
+import {
   ZCreateProjectSchema,
   ZUpdateProjectSchema,
-} = require('../utils/validations');
+} from '../utils/validations.js';
 
 class ProjectService {
   async getAllProjects() {
@@ -55,4 +55,4 @@ class ProjectService {
   }
 }
 
-module.exports = new ProjectService();
+export default new ProjectService();

@@ -1,9 +1,6 @@
-const taskRepository = require('../repositories/task.repository');
-const projectRepository = require('../repositories/project.repository');
-const {
-  ZCreateTaskSchema,
-  ZUpdateTaskSchema,
-} = require('../utils/validations');
+import taskRepository from '../repositories/task.repository.js';
+import projectRepository from '../repositories/project.repository.js';
+import { ZCreateTaskSchema, ZUpdateTaskSchema } from '../utils/validations.js';
 
 class TaskService {
   async getTasksByProjectId(projectId) {
@@ -77,4 +74,4 @@ class TaskService {
   }
 }
 
-module.exports = new TaskService();
+export default new TaskService();

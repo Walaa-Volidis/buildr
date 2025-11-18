@@ -1,5 +1,5 @@
-const teamRepository = require('../repositories/team.repository');
-const { ZCreateTeamMemberSchema } = require('../utils/validations');
+import teamRepository from '../repositories/team.repository.js';
+import { ZCreateTeamMemberSchema } from '../utils/validations.js';
 
 class TeamService {
   async getAllTeamMembers() {
@@ -16,4 +16,4 @@ class TeamService {
   }
 }
 
-module.exports = new TeamService();
+export default new TeamService();

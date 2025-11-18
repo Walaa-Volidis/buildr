@@ -1,4 +1,4 @@
-const teamService = require('../services/team.service');
+import teamService from '../services/team.service.js';
 
 class TeamController {
   async getAllTeamMembers(req, res, next) {
@@ -20,4 +20,4 @@ class TeamController {
   }
 }
 
-module.exports = new TeamController();
+export default new TeamController();

@@ -1,4 +1,4 @@
-const { prisma } = require('../config/db');
+import { prisma } from '../config/db.js';
 
 class TeamRepository {
   async findAll() {
@@ -31,4 +31,4 @@ class TeamRepository {
   }
 }
 
-module.exports = new TeamRepository();
+export default new TeamRepository();

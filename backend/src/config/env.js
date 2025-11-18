@@ -1,4 +1,4 @@
-require('dotenv').config();
+import 'dotenv/config';
 
 const requiredEnvVars = ['DATABASE_URL'];
 
@@ -15,4 +15,4 @@ const env = {
   CORS_ORIGIN: process.env.CORS_ORIGIN || 'http://localhost:3000',
 };
 
-module.exports = env;
+export default env;

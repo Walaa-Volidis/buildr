@@ -1,5 +1,5 @@
-const express = require('express');
-const projectController = require('../controllers/project.controller');
+import express from 'express';
+import projectController from '../controllers/project.controller.js';
 
 const router = express.Router();
 
@@ -13,4 +13,4 @@ router.patch('/:id', projectController.updateProject.bind(projectController));
 
 router.delete('/:id', projectController.deleteProject.bind(projectController));
 
-module.exports = router;
+export default router;

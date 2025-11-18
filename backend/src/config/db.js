@@ -1,4 +1,4 @@
-const { PrismaClient } = require('@prisma/client');
+import { PrismaClient } from '@prisma/client';
 
 const prisma = new PrismaClient({
   log:
@@ -22,4 +22,4 @@ async function disconnectDatabase() {
   console.log('Database disconnected');
 }
 
-module.exports = { prisma, connectDatabase, disconnectDatabase };
+export { prisma, connectDatabase, disconnectDatabase };

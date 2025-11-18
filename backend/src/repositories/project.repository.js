@@ -1,4 +1,4 @@
-const { prisma } = require('../config/db');
+import { prisma } from '../config/db.js';
 
 class ProjectRepository {
   async findAll() {
@@ -45,4 +45,4 @@ class ProjectRepository {
   }
 }
 
-module.exports = new ProjectRepository();
+export default new ProjectRepository();

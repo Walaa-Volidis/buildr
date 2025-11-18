@@ -1,10 +1,10 @@
-const express = require('express');
-const cors = require('cors');
-const env = require('./config/env');
-const errorMiddleware = require('./middlewares/error.middleware');
-const projectRoutes = require('./routes/project.routes');
-const taskRoutes = require('./routes/task.routes');
-const teamRoutes = require('./routes/team.routes');
+import express from 'express';
+import cors from 'cors';
+import env from './config/env.js';
+import errorMiddleware from './middlewares/error.middleware.js';
+import projectRoutes from './routes/project.routes.js';
+import taskRoutes from './routes/task.routes.js';
+import teamRoutes from './routes/team.routes.js';
 
 const app = express();
 
@@ -39,4 +39,4 @@ app.use((req, res) => {
 
 app.use(errorMiddleware);
 
-module.exports = app;
+export default app;

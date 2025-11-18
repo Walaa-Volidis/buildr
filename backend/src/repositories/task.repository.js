@@ -1,4 +1,4 @@
-const { prisma } = require('../config/db');
+import { prisma } from '../config/db.js';
 
 class TaskRepository {
   async findByProjectId(projectId) {
@@ -62,4 +62,4 @@ class TaskRepository {
   }
 }
 
-module.exports = new TaskRepository();
+export default new TaskRepository();

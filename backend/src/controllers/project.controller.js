@@ -1,4 +1,4 @@
-const projectService = require('../services/project.service');
+import projectService from '../services/project.service.js';
 
 class ProjectController {
   async getAllProjects(req, res, next) {
@@ -50,4 +50,4 @@ class ProjectController {
   }
 }
 
-module.exports = new ProjectController();
+export default new ProjectController();
