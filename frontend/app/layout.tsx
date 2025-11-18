@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'VZNX Project Manager - Professional Project Management Platform',
+  title: 'Buildr Project Manager - Professional Project Management Platform',
   description:
     'Streamline your project workflow with powerful team collaboration and task management',
 };
@@ -48,7 +48,7 @@ export default function RootLayout({
                   </div>
                   <div className="flex flex-col">
                     <span className="text-xl font-bold text-slate-900 dark:text-white tracking-tight">
-                      VZNX
+                      Buildr
                     </span>
                     <span className="text-[10px] font-medium text-slate-500 dark:text-slate-400 uppercase tracking-wider">
                       Project Manager
